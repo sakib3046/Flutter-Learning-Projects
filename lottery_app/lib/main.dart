@@ -30,10 +30,10 @@ class _MyAppState extends State<MyApp> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            x==y ? Text('Win'): Text('Lose'),
-            SizedBox(height: 20,),
-            x==y?Icon(Icons.done,color: Colors.lightGreenAccent):Icon(Icons.error,color: Colors.deepOrange),
-            SizedBox(height: 20,),
+            x==y ? const Text('Win'):const Text('Lose'),
+            const SizedBox(height: 20,),
+            x==y?const Icon(Icons.done,color: Colors.lightGreenAccent):const Icon(Icons.error,color: Colors.deepOrange),
+            const SizedBox(height: 20,),
             Center(child: Container(
               height: 100,
               width: 300,
@@ -53,7 +53,7 @@ class _MyAppState extends State<MyApp> {
 
               });
             },
-          child:Icon(Icons.refresh_rounded),
+          child: Icon(Icons.refresh_rounded),
           backgroundColor: Colors.lightGreenAccent,
         ),
       ),
